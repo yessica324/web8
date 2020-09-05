@@ -26,4 +26,8 @@ class Welcome extends CI_Controller {
 	public function saludar(){
 		echo "Te estoy Saludando";
 	}
+
+	public function Despidiendo(){
+		echo "Me estoy Despidiendo";
+	}
 }
