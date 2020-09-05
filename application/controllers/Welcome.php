@@ -23,11 +23,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 
-	public function saludar(){
-		echo "Te estoy Saludando";
-	}
 
 	public function Despidiendo(){
 		echo "Me estoy Despidiendo";
+	}
+
+	public function saludar(){
+		echo "Te estoy Saludando";
 	}
 }
