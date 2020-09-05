@@ -24,11 +24,18 @@ class Welcome extends CI_Controller {
 	}
 
 
-	public function Despidiendo(){
-		echo "Me estoy Despidiendo";
+	public function despedir(){
+		echo "Hasta luego Amigo";
 	}
 
 	public function saludar(){
-		echo "Te estoy Saludando";
+
+		$this->load->helper('url');
+
+		$datos=[
+			'nombre'=>"Mario",
+			'apellido'=>"Bros"
+		];
+		$this->load->view('saludar',$datos);
 	}
 }
